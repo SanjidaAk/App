@@ -1,0 +1,106 @@
+,,Project Name,Mahfil App testing,,,,,
+,,Test case Author,Sanjida Akter,,,,,
+,,Test Environment,Android Device,,,,,
+,,,,,,,,
+Module,User Authentication,,,,,,,
+,,,,,,,,
+Test case no,Test Scenario,Test Step,Input Data,Expected Results ,Actual Results,Execution Status ,Bug Priority,Bug sev
+1,Verify Sign Up functionality with valid functions,"1. Launch the application and navigate to the sign-up page.
+2. Enter a valid email address in the email field.
+3. Enter a strong password in the password field. 
+4. Re-enter the same password in the confirm password field. 
+5. Click the ""Sign Up"" button.",Continue with google,The application should successfully create a new user account and redirect the user to the home page.,The application creates a new user account successfully redirect the user to the home page.,Pass,,
+2,Verify Sign Up functionality with empty fields,"1. Launch the application and navigate to the sign-up page. 
+2. Leave all the required fields empty. 
+3. Click the ""Sign Up"" button.",Continue with email,The application should display an error message indicating that all required fields must be filled in.,The application display an error message indicating the error.,Pass,,
+3,Verify Sign Up functionality with invalid email format,"1. Launch the application and navigate to the sign-up page. 
+2. Enter an invalid email address (e.g., username@xyz) in the email field. 
+3. Enter a strong password in the password field. 
+4. Re-enter the same password in the confirm password field. 
+5. Click the ""Sign Up"" button.",Log in another way,The application should display an error message indicating that the email format is invalid.,The application display an error message indicating that the email format is invalid.,Pass,,
+4,Verify Sign Up functionality with password mismatch,"1. Launch the application and navigate to the sign-up page. 
+2. Enter a valid email address in the email field. 
+3. Enter a strong password in the password field. 
+4. Enter a different password in the confirm password field.
+5. Click the ""Sign Up"" button.",,The application should display an error message indicating that the passwords do not match.,The application creates a new user account despite the password mismatch.,Reject,High,Major
+5,Verify Sign Up functionality with existing email,"1. Launch the application and navigate to the sign-up page. 
+2. Enter an email address that is already associated with an existing account. 
+3. Enter a strong password in the password field. 
+4. Re-enter the same password in the confirm password field. 
+5. Click the ""Sign Up"" button.",,The application should display an error message indicating that the email address is already in use.,The application creates a new user account with the existing email address.,Reject,High,Major
+,,,,,,,,
+Module,Content Categories,,,,,,,
+,,,,,,,,
+4,Verify Content Categories Accessibility,1. Launch the application and navigate to a page that displays content categories.,,All listed content categories should be clickable. Clicking on a main category should direct the user to the corresponding category page.,All of the categories are clickable. Clicking on a category always navigate the user to the corresponding page.,Pass,,
+5,Verify Content Organization in Categories,1. Launch the application and navigate to a page that displays content categories.,,The content within each category should be organized logically and consistently. Each category should have a clear and correct title.,The content organization is consistent across categories. ,Pass,,
+6,Verify Video Loading Time,"1. Launch the application and navigate to a page that displays a video. 
+2. Initiate the playback of the video.",Keyboard navigation,"The video should start playing within a reasonable time frame (e.g., 1 second).",The video playback time is significant time as expected.,Pass,,
+,,,,,,,,
+Module,Video Streaming,,,,,,,
+,,,,,,,,
+7,Verify Video Loading Time,"1. Launch the application and navigate to a page that displays a video.
+ 2. Initiate the playback of the video.",Selected video,The video should start playing within a reasonable time frame,The video started playing within a reasonable time.(1 sec),Pass,,
+8,Verify Smooth Playback,"1. Launch the application and navigate to a page that displays a video. 
+2. Initiate the playback of the video.",,video quality should remain consistent without any buffering,Video quality remain consistent without any buffering when strong internet connection,Pass,,
+9,Verify Pause and Play Function,"1. Launch the application and navigate to a page that displays a video. 
+2. Initiate the playback of the video. 
+3. Click the ""Pause"" button on the video player.",,"The video should pause/play immediately when the ""Pause""/""Play"" button is clicked.","The video pause/play immediately when the ""Pause""/""Play"" button is clicked.",Pass,,
+10,Verify Autoplay Functionality,"1. Launch the application and navigate to a page that displays a video. 
+2. Initiate the playback of the video. 
+3. Click the ""Autoplay"" button on the video player.",,The next video in the queue should start playing automatically after the current video ends.,The next video in the queue startes playing automatically.,Pass,,
+11,Verify Full-Screen Functionality,"1. Launch the application and navigate to a page that displays a video. 
+2. Initiate the playback of the video. 
+3. Click the ""Full-Screen"" icon on the video player.",,"The video should enter/exit full-screen mode when the ""Full-Screen""/""Exit full screen"" button is clicked.",The video enter/exit full-screen mode correctly.,Pass,,
+12,Verify Audio Controls,"1. Launch the application and navigate to a page that displays a video. 
+2. Initiate the playback of the video. 
+3. Check audio on the video player.",Audio settings,The video should mute and unmute correctly when the respective buttons are clicked.,The video muted and unmuted correctly.,Pass,,
+13,Verify 10s earlier Functionality,"1. Launch the application and navigate to a page that displays a video. 
+2. Initiate the playback of the video. 
+3. Double right tap on the video player.",time stamp,The video should 10 sec earlier from remain when the respective buttons are clicked.,Video 10 sec earlier from current status.,Pass,,
+,,,,,,,,
+Module,Unique Video Content,,,,,,,
+,,,,,,,,
+14,Verify Uniqueness of Content,"1. Launch the application and navigate to a page displaying videos. 
+2. Select a video and note its title or other identifying characteristics. 
+3. Search for similar videos using the search functionality.",Scroll vertically,The search results should not include any videos that are identical duplicates of the selected video.,The search results not include duplicate videos of the selected video.,Pass,,
+15,Verify similar to Islamic Principle,"1. Launch the application and navigate to a page displaying video content. 
+2. Select video Islamic Content.",,The video content should adhere to Islamic principles and not contain any inappropriate content.,The video content adhere to Islamic principles.,Pass,,
+,,,,,,,,
+,,,,,,,,
+Module,Download Functionality,,,,,,,
+,,,,,,,,
+16,Verify Download Functionality,Only Available on paid version,,,,,,
+,,,,,,,,
+Module,Search and Filters,,,,,,,
+,,,,,,,,
+17,Verify Search Function for Single Content,"1. Launch the application and navigate to the search bar. 
+2. Enter a specific keyword or phrase related to a particular video. 
+3. Initiate the search.","Search item: ""Ramadan""",The search results should display only the video that directly matches the entered keyword or phrase.,The search results display only the video that directly matches the entered keyword or phrase.,Pass,,
+18,Verify Filter by Category,"1. Launch the application and navigate to a page displaying video categories. 
+2. Select a specific category (e.g.Tilaoat).","Selected Category: ""Tilaoat""",The displayed videos should belong only to the selected category.,Videos from this categories displayed in the filtered results.,Pass,,
+19,Verify Filter Options,"1. Launch the application and navigate to a page displaying video content. 
+2. Explore the available filter options (e.g., date, popularity).","Search item: ""Ramadan""",The filter options should allow users to refine their search results based on the selected criteria.,"The filter options might not function properly, or they may not produce accurate results.",Reject,Low,Low
+,,,,,,,,
+,,,,,,,,
+Module,User Interaction,,,,,,,
+,,,,,,,,
+20,Verify Like Functionality,"1. Launch the application and navigate to a page displaying videos. 
+ 2. Locate a video and click on the ""Like"" button.","Selected video/""Like"" button","The like count for the video should increment by one, indicating that the user has successfully liked the video.","Clicking the ""Like"" button register the like.",Pass,,
+21,Verify Comment Functionality,"1. Launch the application and navigate to a page displaying videos. 
+2. Click on the comment section. 
+3. Enter a valid comment in the designated field. 
+4. Click the ""Submit"" button to post the comment.","Selected video                                Comment Text: ""Good video!""",The comment should be posted successfully and appear immediately underneath the video.,The comment be posted successfully.,Pass,,
+22,Verify Share Functionality,"1. Launch the application and navigate to a page displaying videos. <br> 2. Locate a video and click on the ""Share"" button. <br> 3. Select the desired platform (e.g., Messenger) to share the video.",Selected video                                Share Platform: Messenger,The video should be shared successfully on the chosen platform.,The sharing process done in right platform.,Pass,,
+23,Verify Notification Functionality,"1. Launch the application and log in to a user account. 
+2. Enable notifications in the app settings. 
+3. Interact with another user's content (e.g., like or comment on a video).",,"The user should receive a notification on their device or within the application informing them about the interaction.  The notification should accurately reflect the type of interaction (e.g., ""Your video received a like"").","The user might not receive notifications, or the notifications might not display accurate information.",Reject,Medium,Low
+,,,,,,,,
+Module,Performance Testing,,,,,,,
+,,,,,,,,
+24,Video Playback Performance,"1. Launch the application and navigate to a page displaying videos. 
+2. Click on a video",Network:4G connection,Video should start playing within 2 seconds of clicking the button and There should be no buffering interruptions during playback.,Start playing time is good and no buffering in high speed connection,Pass,,
+25,Video Loading Delay,"1. Launch the application and navigate to a page displaying videos. 
+2. Click on a video",,Video thumbnail and title should load within 3 seconds and Playback should remain smooth with minimal buffering.,Loaded instantly and smooth playback,Pass,,
+26,Verify App Responsiveness During Video Playback,"1. Launch the application and navigate to a page displaying videos. 
+2. Click on a video
+3. Select the comment and scroll comments","User Actions: Pause, play, seek, and volume change during playback",The app should respond instantly to every actions.,The app responded instantly,Pass,,
