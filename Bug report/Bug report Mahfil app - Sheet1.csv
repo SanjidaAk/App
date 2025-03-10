@@ -1,0 +1,96 @@
+,,
+,,
+Category ,Label,Value
+Bug ID,Bug ID Number,#001
+,Reporter Name,Sanjida Akter
+,Submission date,02-06-24
+Bug Overview,Summary,Cant log in with the same account after log out
+,Notes,no
+,Screenshot,Attached
+Environment,Platform,Mobile
+,Operating System,Android 11
+Bug Details,Steps to Reproduce,Log in then log out
+,Expected Results,Log in/Sign in option after Sign up
+,Actual Results,Doing Sign up again
+Bug Tracking,Severity,Major
+,Priority,High
+,,
+,,
+,,
+Category ,Label,Value
+Bug ID,Bug ID Number,#002
+,Reporter Name,Sanjida Akter
+,Submission date,02-06-24
+Bug Overview,Summary,Password recovery option not applicable
+,Notes,no
+,Screenshot,Not Attached
+Environment,Platform,Mobile
+,Operating System,Android 11
+Bug Details,Steps to Reproduce,Logged Out 
+,Expected Results,Password recovery option should be in login interface
+,Actual Results,No Login option
+Bug Tracking,Severity,Major
+,Priority,High
+,,
+,,
+,,
+Category ,Label,Value
+Bug ID,Bug ID Number,#003
+,Reporter Name,Sanjida Akter
+,Submission date,02-06-24
+Bug Overview,Summary,Notiffication count num not available
+,Notes,no
+,Screenshot,Attached
+Environment,Platform,Mobile
+,Operating System,Android 11
+Bug Details,Steps to Reproduce,Sign in Status 
+,Expected Results,Notiffication count num should be shown up when notiffication exists
+,Actual Results,Notiffication count num not showing when notiffication exists inside
+Bug Tracking,Severity,Minor
+,Priority,Midium
+,,
+,,
+,,
+Category ,Label,Value
+Bug ID,Bug ID Number,#004
+,Reporter Name,Sanjida Akter
+,Submission date,02-06-24
+Bug Overview,Summary,Random search result
+,Notes,no
+,Screenshot,Attached
+Environment,Platform,Mobile
+,Operating System,Android 11
+Bug Details,Steps to Reproduce,"Sign in Status ,Search with relevent keyword"
+,Expected Results,"Search result should be appeare by category, date, or popularity "
+,Actual Results,Search result appeared by random
+Bug Tracking,Severity,Minor
+,Priority,Low
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+Category ,Label,Value
+Bug ID,Bug ID Number,#001
+,Reporter Name,Sanjida Akter
+,Submission date,15-10-24
+Bug Overview,Summary,Cant log in with the same account after log out
+,Notes,no
+,Screenshot,Attached
+Environment,Platform,Mobile
+,Operating System,Android 11
+Bug Details,Steps to Reproduce,Log in then log out
+,Expected Results,Log in/Sign in option after Sign up
+,Actual Results,Doing Sign up again
+Bug Tracking,Severity,Major
+,Priority,High
