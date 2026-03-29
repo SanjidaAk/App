@@ -17,7 +17,7 @@ public class WordCount {
             StringBuilder text = new StringBuilder();
             String line;
             while ((line = reader.readLine()) != null) {
-                text.append(line).append(" ");
+                text.append(line).append("  ");
             }
 
             
